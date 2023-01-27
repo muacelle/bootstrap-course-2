@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeite Café</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="header">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Confeite Café</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o Café
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true" id="main">
+
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./images/slides/slide-1.jpg">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slides/slide-2.jpg">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slides/slide-3.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+    
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/cafe.jpg" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title mt-3 mt-md-0">Sobre o Confeite Café</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, reprehenderit. Quibusdam harum unde dolore voluptatum eaque maiores dolorem facilis temporibus consequuntur. Dolore pariatur provident in laboriosam praesentium sint obcaecati modi.</p>
+                            <h3 class="section-title">O espaço</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat eaque tenetur aliquam repudiandae, maiores provident ipsa dolor cum, reiciendis explicabo beatae, ut laboriosam assumenda cupiditate. Corporis cupiditate porro similique!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="pt-4 pb-4">
+            <div class="container">
+
+                <div class="row mb-4">
+                    <h2 class="section-title text-center">Para todas as ocasiões</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/aniversario.jpg" class="d-block w-100 rounded">
+                        <h3 class="section-title pt-1">Aniversários</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo blanditiis dolorum ducimus consectetur id fuga odio corporis tempore earum veniam! Tempore veniam totam obcaecati incidunt iusto dolore asperiores ullam dolor.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="./images/eventos/casamento.jpg" class="d-block w-100 rounded">
+                        <h3 class="section-title pt-1">Casamentos</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo blanditiis dolorum ducimus consectetur id fuga odio corporis tempore earum veniam! Tempore veniam totam obcaecati incidunt iusto dolore asperiores ullam dolor.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="./images/eventos/confraternizacoes.jpg" class="d-block w-100 rounded">
+                        <h3 class="section-title pt-1">Confraternizações</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo blanditiis dolorum ducimus consectetur id fuga odio corporis tempore earum veniam! Tempore veniam totam obcaecati incidunt iusto dolore asperiores ullam dolor.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cardapio" class="pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-4">Nosso cardápio</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio gap-1">
+                            <button type="buttom" data-bs-toggle="tab" data-bs-target="#sem-alcool" class="nav-link text-colored active">Cafés especiais</button>
+                            <button type="buttom" data-bs-toggle="tab" data-bs-target="#alcool" class="nav-link text-colored">Bebidas geladas</button>
+                            <button type="buttom" data-bs-toggle="tab" data-bs-target="#sobremesas" class="nav-link text-colored">Confeitaria</button>
+                        </nav>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+
+                            <div class="tab-pane active" id="sem-alcool">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequuntur tempora adipisci cumque aspernatur obcaecati voluptatem inventore quod rem illum vero, nostrum aliquid quis! Nihil voluptates illum consequuntur alias soluta.</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <img src="./images/cardapio/cafe.jpg" class="rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="alcool">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ad omnis assumenda, iste, provident praesentium voluptates dicta nulla placeat laudantium animi nostrum. Dolores ad sed voluptatibus tenetur exercitationem pariatur! Veritatis.</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <img src="./images/cardapio/bebida.jpg" class="rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore necessitatibus dolorem beatae nobis facere! Iusto sequi consequuntur animi veniam labore laudantium voluptatum, non architecto vero dolore? Asperiores, consectetur velit?</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <img src="./images/cardapio/confeitaria.jpg" class="rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="pt-4 pb-4">
+            <div class="container">
+
+                <div class="row">
+                    <h2 class="section-title text-center">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <input type="text" id="mensagem" class="form-control" required>
+                            </div>
+                            <buttom type="submit" class="btn fw-bold">Enviar</buttom>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 pt-4">Redes Sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5"><a href=""><i class="text-colored bi bi-facebook"></i> </a></li>
+                                <li class="fs-5 ms-1 me-1"><a href=""><i class="text-colored bi bi-instagram"></i> </a></li>
+                                <li class="fs-5"><a href=""><i class="text-colored bi bi-whatsapp"></i> </a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title fs-4 pt-4">Endereço</h3>
+                            <p>Rua Teste Exemplo nº 123, Bairro Feliz, Salvador - BA</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
